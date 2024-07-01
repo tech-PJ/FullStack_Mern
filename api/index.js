@@ -23,12 +23,12 @@ app.listen(3000,()=>{
 app.use('/api/auth',authRouter);
 app.use('/api/user',userRouter);
 
-app.use((err,req,res,next)=>{
-    const statusCode=err.statusCode||500;
-    const msg=err.msg||"Invalid server Error";
+app.use((err, req, res, next) => {
+    const statusCode = err.statusCode || 500;
+    const message = err.message || 'Internal Server Error';
     return res.status(statusCode).json({
-        success:false,
-        statusCode,
-        msg
+      success: false,
+      statusCode,
+      message,
     });
-})
+  });
