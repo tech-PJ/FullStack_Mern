@@ -18,7 +18,7 @@ const userSchema=new mongoose.Schema({
     },
     avatar:{
         type:String,
-        default:"https://imgs.search.brave.com/urgkfytC1yerhE9EAr04PRXi1qU4drWCcPv4J5jwNX8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2RkL2Yw/LzExL2RkZjAxMTBh/YTE5ZjQ0NTY4N2I3/Mzc2NzllZWM5Y2Iy/LmpwZw",
+        default:"https://imgs.search.brave.com/q_Mfdl5QDC_AYPng3SsWd2qOM2QsB1wSji5_xIFk2cM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2RkL2Yw/LzExL2RkZjAxMTBh/YTE5ZjQ0NTY4N2I3/Mzc2NzllZWM5Y2Iy/LmpwZw",
     },
 },{timestamps:true});
 
