@@ -9,7 +9,7 @@ import {
 import { app } from '../firebase';
 import { updateUserStart, updateUserFailure, updateUserSucess, deleteUserFailure, deleteUserStart, deleteUserSuccess ,signOutUserStart,signOutUserSuccess,signOutUserFailure} from '../redux/user/userSlice';
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Profile() {
   const dispatch = useDispatch();
@@ -177,6 +177,9 @@ export default function Profile() {
         <button disabled={loading} className='bg-slate-700 text-white rounded-lg p-3 uppercase hover:opacity-95 disabled:opacity-80'>
           {loading ? 'Loading...' : 'Update'}
         </button>
+        <Link to={"/create-listing"}  className='bg-green-700 text-white rounded-lg p-3 uppercase hover:opacity-95 disabled:opacity-80 text-center'>
+           Create A LISTING
+        </Link>
       </form>
       <div className='flex justify-between mt-5'>
         <span onClick={handleDeleteUser} className='text-red-700 cursor-pointer'>Delete account</span>
